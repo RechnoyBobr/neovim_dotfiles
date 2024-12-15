@@ -64,7 +64,16 @@ return {
     },
 
     keymap = {
-      preset = "default",
+      preset = "enter",
+      ["<C-y>"] = { "select_and_accept" },
+      ["<Tab>"] = {
+        "select_next",
+        "fallback",
+      },
+      ["<S-Tab>"] = {
+        "select_prev",
+        "fallback",
+      },
     },
   },
   ---@param opts blink.cmp.Config | { sources: { compat: string[] } }

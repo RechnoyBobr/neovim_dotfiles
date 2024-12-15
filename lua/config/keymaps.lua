@@ -29,7 +29,6 @@ keymap.set("n", "sh", "<C-w>h")
 keymap.set("n", "sk", "<C-w>k")
 keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sl", "<C-w>l")
-keymap.set("i", "<Tab>", "<Nop>")
 keymap.set("i", "<F8>", "<cmd>DapStepInto<CR>")
 keymap.set("i", "<F9>", "<cmd>DapStepOver<CR>")
 keymap.set("i", "<F10>", "<cmd>DapStepOut<CR>")
@@ -42,16 +41,13 @@ keymap.set(
   ":lua require('telescope').extensions.project.project{}<CR>",
   { desc = "Telescope projects" }
 )
--- local cmp = require("blink-cmp")
+
+-- local function get_autocomplete()
+--   local cmp = require("blink-cmp")
+--   if cmp.is_visible() then
+--     cmp.select_prev()
+--   end
+-- end
+-- keymap.set("i", "<Tab>", get_autocomplete, { noremap = true })
 --
--- cmp.setup({
---   mapping = {
---     ["<Tab>"] = function(fallback)
---       if cmp.is_visible() then
---         cmp.select_next()
---       else
---         fallback()
---       end
---     end,
---   },
--- })
+-- l
