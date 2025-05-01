@@ -25,6 +25,9 @@ return {
       timeout = 10000,
     },
   },
+  { "LazyVim/LazyVim", opts = {
+    colorscheme = "kanagawa-paper-ink",
+  } },
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
